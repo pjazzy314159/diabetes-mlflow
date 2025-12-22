@@ -50,3 +50,10 @@ mypy>=1.6.0
 
 # Hyperparameter opt
 optuna >= 4.6.0
+
+# Handle imbalanced data
+imblearn >= 0.14.0
+
+# ML models
+xgboost >=3.1.2
+lightgbm >=4.6.0
