@@ -1,0 +1,61 @@
+name: diabetes
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  # Python version
+  - python=3.10.19
+  
+  # Deep Learning
+  - tensorflow>=2.13.0
+  - keras>=2.13.0
+  
+  # Data Science Core
+  - numpy>=1.24.0
+  - pandas>=2.0.0
+  
+  # Visualization
+  - matplotlib>=3.7.0
+  - seaborn>=0.12.0
+  
+  # Configuration
+  - pyyaml>=6.0
+  
+  # Jupyter (optional, for experimentation)
+  - jupyter
+  - ipykernel
+  
+  # Pip packages
+  - pip
+  - pip:
+      # API Framework
+      - fastapi>=0.104.0
+      - uvicorn[standard]>=0.24.0
+      - python-multipart>=0.0.6
+      - pydantic>=2.0.0
+      
+      # ONNX Runtime for inference
+      - onnxruntime>=1.16.0
+      - tf2onnx>=1.15.0
+      
+      # Testing
+      - pytest>=7.4.0
+      - pytest-cov>=4.1.0
+      - requests>=2.31.0
+      
+      # Logging and monitoring
+      - python-json-logger>=2.0.7
+      
+      # Azure SDK (for production deployment)
+      - azure-ai-ml>=1.11.0
+      - azure-identity>=1.14.0
+      - azure-storage-blob>=12.19.0
+      - opencensus-ext-azure>=1.1.9
+      
+      # Utilities
+      - python-dotenv>=1.0.0
+      
+      # Code quality
+      - black>=23.0.0
+      - flake8>=6.1.0
+      - mypy>=1.6.0
